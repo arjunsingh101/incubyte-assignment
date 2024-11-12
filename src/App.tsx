@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { add } from "./calculator";
 
 function App() {
+  const [input, setInput] = useState<string>("");
+  const [result, setResult] = useState<number | string>("");
+  const [error, setError] = useState<string>("");
+
+  const handleAdd = () => {
+    try {
+      const sum = add(input);
+      setResult(sum);
+      setError("");
+    } catch (e: any) {
+      setError(e?.message);
+      setResult("");
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="app">
+      <div className="bg-stone-400 size-[500px] flex flex-col justify-center items-center gap-5">
+        <h1>String Calculator</h1>
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Enter numbers"
+          className="text-black rounded-lg"
+        />
+        <button
+          className="px-5 py-2 bg-blue-400 rounded-lg"
+          onClick={handleAdd}
         >
-          Learn React
-        </a>
-      </header>
+          Calculate
+        </button>
+        {error && <div className="error">{error}</div>}
+        {result !== "" && <div className="result">Result: {result}</div>}
+      </div>
     </div>
   );
 }
