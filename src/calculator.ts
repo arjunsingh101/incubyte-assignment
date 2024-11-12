@@ -9,5 +9,11 @@ export const add = (numbers: string): number => {
   }
 
   const nums = numbers.split(delimiter).map(Number);
+  const negatives = nums.filter((num) => num < 0);
+
+  if (negatives.length) {
+    throw new Error(`Negative numbers not allowed: ${negatives.join(", ")}`);
+  }
+
   return nums.reduce((acc, num) => acc + num, 0);
 };
