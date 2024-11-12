@@ -11,3 +11,7 @@ test("should return the number for a single number input", () => {
 test("should return the sum for two numbers", () => {
   expect(add("1,2")).toBe(3);
 });
+
+test("handles new lines as delimiters", () => {
+  expect(add("1\n2,3")).toBe(6);
+});
