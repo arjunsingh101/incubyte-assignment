@@ -19,16 +19,19 @@ const StringCalculator: React.FC = () => {
   };
 
   return (
-    <div className="bg-stone-400 size-[500px] flex flex-col justify-center items-center gap-5">
-      <h1>String Calculator</h1>
+    <div className="flex flex-col items-center justify-center gap-5 p-8 bg-white rounded-lg string-calculator">
+      <h1 className="mb-4 font-semibold">String Calculator</h1>
       <input
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Enter numbers"
-        className="text-black rounded-lg"
+        className="px-2 text-black rounded-lg text-md"
       />
-      <button className="px-5 py-2 bg-blue-400 rounded-lg" onClick={handleAdd}>
+      <button
+        className="p-2 text-lg font-medium bg-blue-400 rounded-lg "
+        onClick={handleAdd}
+      >
         Calculate
       </button>
       {error && <div className="error">{error}</div>}
