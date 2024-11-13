@@ -1,7 +1,7 @@
 {
   "name": "incubyte-assignment",
   "version": "0.1.0",
-   "homepage":"https://github.com/arjunsingh101/incubyte-assignment.git",
+  "homepage":"https://github.com/arjunsingh101/incubyte-assignment",
   "private": true,
   "dependencies": {
     "@testing-library/react": "^13.4.0",

@@ -2,7 +2,7 @@ import StringCalculator from "./components/stringCaculator";
 
 function App() {
   return (
-    <div className="app">
+    <div>
       <StringCalculator />
     </div>
   );
