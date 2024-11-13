@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/arjunsingh101/incubyte-assignment.git/static/css/main.aac96bfd.css",
-    "main.js": "/arjunsingh101/incubyte-assignment.git/static/js/main.cd11d3d4.js",
-    "static/js/453.b5124a39.chunk.js": "/arjunsingh101/incubyte-assignment.git/static/js/453.b5124a39.chunk.js",
-    "index.html": "/arjunsingh101/incubyte-assignment.git/index.html",
-    "main.aac96bfd.css.map": "/arjunsingh101/incubyte-assignment.git/static/css/main.aac96bfd.css.map",
-    "main.cd11d3d4.js.map": "/arjunsingh101/incubyte-assignment.git/static/js/main.cd11d3d4.js.map",
-    "453.b5124a39.chunk.js.map": "/arjunsingh101/incubyte-assignment.git/static/js/453.b5124a39.chunk.js.map"
+    "main.css": "/arjunsingh101/incubyte-assignment/static/css/main.aac96bfd.css",
+    "main.js": "/arjunsingh101/incubyte-assignment/static/js/main.ad704375.js",
+    "static/js/453.b5124a39.chunk.js": "/arjunsingh101/incubyte-assignment/static/js/453.b5124a39.chunk.js",
+    "index.html": "/arjunsingh101/incubyte-assignment/index.html",
+    "main.aac96bfd.css.map": "/arjunsingh101/incubyte-assignment/static/css/main.aac96bfd.css.map",
+    "main.ad704375.js.map": "/arjunsingh101/incubyte-assignment/static/js/main.ad704375.js.map",
+    "453.b5124a39.chunk.js.map": "/arjunsingh101/incubyte-assignment/static/js/453.b5124a39.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aac96bfd.css",
-    "static/js/main.cd11d3d4.js"
+    "static/js/main.ad704375.js"
   ]
 }
